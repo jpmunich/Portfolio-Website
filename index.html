@@ -8,45 +8,145 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Portfolio Website</h1>
-
-    <div class="cell-container">
-      <div class="cell">
-        <a href="https://jpmunich.github.io/Odin-Weather-App-2/">
-          <img src="./assets/weather.jpg" alt="weather app" />
-          <p>Weather</p>
-        </a>
+    <div class="header-container">
+      <div class="nav-container">
+        <h2 class="title">CS Project Showcase</h2>
+        <div id="nav-container-right">
+          <button id="portfolio-button">Portfolio</button>
+          <button id="about-button">About</button>
+          <a href="https://github.com/jpmunich">
+            <img
+              id="github-mark"
+              src="./assets/github-mark-white.png"
+              alt="github logo"
+            />
+          </a>
+        </div>
       </div>
-      <div class="cell">
-        <a href="https://jpmunich.github.io/Palindrome-Checker/">
-          <img src="./assets/palindrome.png" alt="palindrome checker" />
-          <p>Palindrome Checker</p>
-        </a>
-      </div>
-      <div class="cell">
-        <a href="https://zchspuentes.com/">
-          <img src="./assets/puentes.png" alt="website" />
-          <p>Puentes</p>
-        </a>
-      </div>
-      <div class="cell">
-        <a href="https://jpmunich.github.io/Odin-Tic-Tac-Toe-2/">
-          <img src="./assets/tic-tac-toe.jpg" alt="website" />
-          <p>Tic Tac Toe</p>
-        </a>
-      </div>
-      <div class="cell">
-        <a href="https://jp-odin-cv.netlify.app/">
-          <img src="./assets/resume.jpg" alt="website" />
-          <p>CV Builder</p>
-        </a>
-      </div>
-      <div class="cell">
-        <a href="https://jpmunich.github.io/Odin-Rock-Paper-Scissors/">
-          <img src="./assets/scissors.jpg" alt="website" />
-          <p>Rock Paper Scissors</p>
-        </a>
+      <div class="name-container">
+        <h1 class="name">Parker Coyle</h1>
       </div>
     </div>
+
+    <h3 id="about-title">About</h3>
+    <div class="about-container">
+      <p class="about-text">
+        Hello! My name is Parker Coyle and this website is meant to showcase my
+        improvement and overall journey as a web developer. I began my journey
+        in the winter of 2021 when I discovered how to build static web pages in
+        HTML. From there, I learned to make my static sites look better using
+        CSS which led me into making interactive and dynamic pages with
+        Javascript. I have since further branched out and learned to use
+        technologies such as webpack to compile packages easily and github to
+        have a sense of version control within my projects. To spice up my
+        frontend skills, I learned react to speed up development and handle
+        tasks with a higher overhead of complexity to them. I have also ventured
+        into pure computer science and data structures and algorithms
+        programming through solving leetcode problems and by learning new
+        languages such as C and C#. The next step I want to take in my endeavors
+        is to learn NodeJS and build full stack projects then to delve into
+        machine learning with Python.
+      </p>
+    </div>
+
+    <h3 id="portfolio-title">Portfolio</h3>
+
+    <div class="cell-container-container">
+      <div class="used-technologies-container">
+        <h3>Technologies Used:</h3>
+        <ul>
+          <li>Javascript with React Framework</li>
+          <li>HTML/CSS</li>
+          <li>Vite Build Tool (Uses Rollup Module Bundler)</li>
+          <li>NPM (Node Package Manager)</li>
+        </ul>
+      </div>
+
+      <div class="cell-container">
+        <div class="cell">
+          <a href="https://jp-odin-cv.netlify.app/">
+            <img src="./assets/resume.jpg" alt="website" />
+            <p>CV Builder</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="used-technologies-container">
+        <h3>Technologies Used:</h3>
+        <ul>
+          <li>Vanilla Javascript (No Framework)</li>
+          <li>HTML/CSS</li>
+          <li>Webpack Module Bundler</li>
+          <li>NPM (Node Package Manager)</li>
+        </ul>
+      </div>
+
+      <div class="cell-container">
+        <div class="cell">
+          <a href="https://zchspuentes.com/">
+            <img src="./assets/puentes.png" alt="website" />
+            <p>Puentes (Club Website)</p>
+          </a>
+        </div>
+        <div class="cell">
+          <a href="https://jpmunich.github.io/Odin-Restaurant-Page/">
+            <img src="./assets/food.jpg" alt="restaurant page" />
+            <p>Mock Restaurant Webpage</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="used-technologies-container">
+        <h3>Technologies Used:</h3>
+        <ul>
+          <li>Vanilla Javascript (No Framework)</li>
+          <li>HTML/CSS</li>
+          <li>Webpack Module Bundler</li>
+          <li>NPM (Node Package Manager)</li>
+          <li>
+            Open Weather API (To retrieve weather data from across the world)
+          </li>
+        </ul>
+      </div>
+
+      <div class="cell-container">
+        <div class="cell">
+          <a href="https://jpmunich.github.io/Odin-Weather-App-2/">
+            <img src="./assets/weather-alt.jpg" alt="weather app" />
+            <p>Weather</p>
+          </a>
+        </div>
+      </div>
+
+      <div class="used-technologies-container">
+        <h3>Technologies Used:</h3>
+        <ul>
+          <li>Vanilla Javascript (No Framework)</li>
+          <li>HTML/CSS</li>
+        </ul>
+      </div>
+
+      <div class="cell-container">
+        <div class="cell">
+          <a href="https://jpmunich.github.io/Odin-Tic-Tac-Toe-2/">
+            <img src="./assets/tic-tac-toe.jpg" alt="website" />
+            <p>Tic Tac Toe</p>
+          </a>
+        </div>
+        <div class="cell">
+          <a href="https://jpmunich.github.io/Odin-Rock-Paper-Scissors/">
+            <img src="./assets/scissors.jpg" alt="website" />
+            <p>Rock Paper Scissors</p>
+          </a>
+        </div>
+        <div class="cell">
+          <a href="https://jpmunich.github.io/Palindrome-Checker/">
+            <img src="./assets/palindrome.png" alt="palindrome checker" />
+            <p>Palindrome Checker</p>
+          </a>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>

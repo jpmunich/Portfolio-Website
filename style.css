@@ -3,17 +3,115 @@
   padding: 0;
   box-sizing: border-box;
   color: whitesmoke;
+  scroll-behavior: smooth;
 }
 
 body {
-  background-color: rgb(59, 59, 59);
+  background-color: rgb(37, 37, 37);
 }
 
-h1 {
+.title {
+  font-size: 2.2rem;
+  width: 60%;
+  padding: clamp(2rem, 6vw, 4rem);
+  transition: 0.8s;
+}
+
+.title:hover {
+  font-size: 2.4rem;
+}
+
+.header-container {
+  height: 100vh;
+  background-image: url("./assets/code.jpg");
+  background-size: cover;
+}
+
+#github-mark {
+  object-fit: contain;
+  width: 100px;
+  height: 50px;
+}
+
+#nav-container-right {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 40%;
+}
+
+button {
+  background-color: transparent;
+  border: 2px solid whitesmoke;
+  border-radius: 4px;
+  padding: 0.5em 1.8em;
+  font-size: 1.2rem;
+  font-weight: 700;
+  transition: 1s;
+}
+
+button:hover {
+  padding: 0.5em 2.4em;
+}
+
+.nav-container {
+  display: flex;
+  height: 100px;
+  background-color: rgb(0, 0, 0, 0.7);
+  justify-content: space-around;
+  align-items: center;
+}
+
+.name {
+  font-size: 4rem;
+  padding: 0.4em 0.6em;
+  background-color: rgb(0, 0, 0, 0.7);
+  transition: 1.2s;
+  border-radius: 4px;
+}
+
+.name:hover {
+  font-size: 4.2rem;
+}
+
+.name-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 75%;
+}
+
+#portfolio-title,
+#about-title {
+  text-align: center;
+  font-size: 3rem;
+  padding: 1.5em 0 1em 0;
+}
+
+#portfolio-title {
+  padding: 1.5em 0 0 0;
+}
+
+.about-text {
   display: flex;
   justify-content: center;
-  align-items: center;
-  height: 120px;
+  line-height: 1.5;
+  font-size: 1.2rem;
+  padding: 0 4em 0 5em;
+}
+
+#about-title,
+.about-container {
+  background-color: rgb(37, 37, 37);
+}
+
+.about-container {
+  padding-bottom: 24px;
+}
+
+.cell-container-container {
+  background-image: linear-gradient(rgb(37, 37, 37), rgb(78, 78, 78));
+  padding-bottom: 96px;
 }
 
 .cell-container {
@@ -29,30 +127,49 @@ h1 {
 }
 
 img {
-  height: 400px;
-  width: 400px;
+  height: 100%;
+  width: 100%;
   object-fit: cover;
   overflow: hidden;
   border-radius: 8px;
 }
 
-a {
+.used-technologies-container {
+  padding: 48px 0 36px 48px;
+}
+
+.used-technologies-container > h3 {
+  font-size: 1.8rem;
+}
+
+.used-technologies-container > ul {
+  font-size: 1.1rem;
+  line-height: 1.25;
+  padding-left: 2em;
+}
+
+.cell {
   transition: 1s;
 }
 
-a:hover {
+.cell:hover {
   height: 420px;
   width: 420px;
 }
 
-p {
+a > p {
   position: relative;
   text-align: center;
-  font-size: 1.2rem;
-  bottom: 50.5px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  bottom: 54px;
   width: 100%;
   padding: 12px;
   background-color: rgb(0, 0, 0, 0.8);
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+}
+
+a {
+  text-decoration: none;
 }
