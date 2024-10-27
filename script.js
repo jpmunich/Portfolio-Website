@@ -14,3 +14,7 @@ document.getElementById("portfolio-button").addEventListener("click", () => {
 document.getElementById("about-button").addEventListener("click", () => {
   document.getElementById("about-title").scrollIntoView();
 });
+
+document.getElementById("unlinked-button").addEventListener("click", () => {
+  document.getElementById("unlinked-title").scrollIntoView();
+});
